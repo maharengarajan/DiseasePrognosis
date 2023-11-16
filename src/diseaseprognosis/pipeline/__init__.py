@@ -1,0 +1,1 @@
+from diseaseprognosis.pipeline.st01_data_ingestion import DataIngestionTrainingPipeline

@@ -1,0 +1,1 @@
+from diseaseprognosis.config.configuration import ConfigurationManager

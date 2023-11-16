@@ -1,0 +1,1 @@
+from diseaseprognosis.components.data_ingestion import DataIngestion
