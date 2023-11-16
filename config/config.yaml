@@ -5,3 +5,9 @@ data_ingestion:
   source_URL: https://github.com/maharengarajan/dataset/raw/main/Disease_pred_dataset.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+
+data_validation:
+  root_dir: artifacts/data_validation
+  unzip_data_dir: artifacts/data_ingestion/Disease_pred_dataset/data.csv
+  status_file: artifacts/data_validation/status.txt
