@@ -2,5 +2,7 @@ pandas
 numpy
 notebook
 scikit-learn
+python-box
+ensure
 
 -e .
