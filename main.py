@@ -1,5 +1,6 @@
 from diseaseprognosis.pipeline import DataIngestionTrainingPipeline
 from diseaseprognosis.pipeline import DataValidationTrainingPipeline
+from diseaseprognosis.pipeline import DataTransformationTrainingPipeline
 from diseaseprognosis import logger
 
 
@@ -23,3 +24,14 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
+
+
+STAGE_NAME = "Data Transformation"
+try:
+    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+    data_ingestion = DataTransformationTrainingPipeline()
+    data_ingestion.main()
+    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+    logger.exception(e)
+    raise e
