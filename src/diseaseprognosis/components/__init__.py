@@ -1,1 +1,2 @@
 from diseaseprognosis.components.data_ingestion import DataIngestion
+from diseaseprognosis.components.data_validation import DataValiadtion
