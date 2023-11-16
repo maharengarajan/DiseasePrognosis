@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 artifacts/data_ingestion/data.zip
 artifacts/data_ingestion/Disease_pred_dataset/data.csv
+artifacts/data_validation/status.txt
