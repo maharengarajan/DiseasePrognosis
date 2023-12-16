@@ -1,1 +1,1 @@
-from diseaseprognosis.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig
+from diseaseprognosis.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainerConfig
