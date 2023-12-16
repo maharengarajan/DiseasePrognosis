@@ -4,5 +4,6 @@ notebook
 scikit-learn
 python-box
 ensure
+mlflow
 
 -e .
