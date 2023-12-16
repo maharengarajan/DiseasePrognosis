@@ -163,3 +163,4 @@ artifacts/data_ingestion/Disease_pred_dataset/data.csv
 artifacts/data_validation/status.txt
 artifacts/data_transformation/test.csv
 artifacts/data_transformation/train.csv
+artifacts/model_trainer/model.joblib
