@@ -1,6 +1,6 @@
 from diseaseprognosis.utils import read_yaml, create_directories
 from diseaseprognosis.constants import *
-from diseaseprognosis.entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig
+from diseaseprognosis.entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainerConfig
 
 
 class ConfigurationManager:
@@ -58,3 +58,25 @@ class ConfigurationManager:
         )
 
         return data_transformation_config
+    
+
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
+        config = self.config.model_trainer
+        params = self.params.RandomForest
+        schema =  self.schema.TARGET_COLUMN
+
+        create_directories([config.root_dir])
+
+        model_trainer_config = ModelTrainerConfig(
+            root_dir=config.root_dir,
+            train_data_path = config.train_data_path,
+            test_data_path = config.test_data_path,
+            model_name = config.model_name,
+            n_estimators = params.n_estimators,
+            min_samples_split = params.min_samples_split,
+            min_samples_leaf = params.min_samples_leaf,
+            random_state = params.random_state,
+            target_column = schema.name
+        )
+
+        return model_trainer_config
