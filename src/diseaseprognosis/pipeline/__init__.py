@@ -3,3 +3,4 @@ from diseaseprognosis.pipeline.st02_data_validation import DataValidationTrainin
 from diseaseprognosis.pipeline.st03_data_transformation import DataTransformationTrainingPipeline
 from diseaseprognosis.pipeline.st04_model_trainer import ModelTrainerTrainingPipeline
 from diseaseprognosis.pipeline.st05_model_evaluation import ModelEvaluationTrainingPipeline
+from diseaseprognosis.pipeline.prediction import PredictionPipeline
