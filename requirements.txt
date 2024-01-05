@@ -6,6 +6,7 @@ python-box
 ensure
 mlflow
 isort
+flake8
 
 
 -e .
